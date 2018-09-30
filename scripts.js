@@ -19,14 +19,14 @@ document.querySelector(".add").addEventListener("click", function(event) {
   mutator = "+";
 });
 document.querySelector(".subtract").addEventListener("click", function(event) {
-  console.log("subtract listener", mutator);
+  // console.log("subtract listener", mutator);
   lastValue = parseInt(mainScreen.innerText);
   mainScreen.innerText = "";
   mutator = "-";
-  console.log("subtract listerner end", mutator);
+  // console.log("subtract listerner end", mutator);
 });
 document.querySelector(".multiply").addEventListener("click", function(event) {
-  console.log("multiply");
+  // console.log("multiply");
 
   lastValue = parseInt(mainScreen.innerText);
   mainScreen.innerText = "";
@@ -63,8 +63,6 @@ document.querySelector(".equals").addEventListener("click", function(event) {
       break;
   }
 });
-
-
 
 document.querySelector(".clear").addEventListener("click", function(event) {
   mainScreen.innerText = "";
